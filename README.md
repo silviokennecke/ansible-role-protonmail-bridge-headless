@@ -31,6 +31,7 @@ Available variables are listed below, along with default values (see `defaults/m
 
     protonmail_username: ""
     protonmail_password: ""
+    protonmail_mailbox_password: ""
     protonmail_custom_domain: ""
     protonmail_enable_2fa: false
 

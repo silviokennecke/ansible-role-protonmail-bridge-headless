@@ -12,6 +12,10 @@ command_protonmail_2fa_code_expect: |
     expect "Two factor code:" {
         send "{{ '' if protonmail_2fa_code.user_input is not defined else protonmail_2fa_code.user_input }}\r"
     }
+command_protonmail_two_password_mode_expect: |
+    expect "Mailbox password:" {
+        send "{{ '' if protonmail_mailbox_password.user_input is not defined else protonmail_mailbox_password.user_input }}\r"
+    }
 command_protonmail_bridge_info: |
     su - {{ protonmail_user }} -c 'echo "info \n exit" | protonmail-bridge --cli --no-window && killall protonmail-bridge || true'
 command_which_protonmail_bridge: "which protonmail-bridge 2>/dev/null || true"
@@ -43,6 +47,7 @@ protonmail_bridge_pubkey_id: "E2C75D68E6234B07"
 protonmail_lib_dir: "/var/lib/protonmail"
 protonmail_user: "protonmail"
 protonmail_user_flags: "-L"
+protonmail_mailbox_password: ""
 protonmail_enable_2fa: false
 
 selinux_httpd_can_sendmail: true
