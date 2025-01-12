@@ -14,7 +14,7 @@ command_protonmail_2fa_code_expect: |
     }
 command_protonmail_two_password_mode_expect: |
     expect "Mailbox password:" {
-        send "{{ '' if protonmail_mailbox_password.user_input is not defined else protonmail_mailbox_password.user_input }}\r"
+        send "{{ protonmail_mailbox_password }}\r"
     }
 command_protonmail_bridge_info: |
     su - {{ protonmail_user }} -c 'echo "info \n exit" | protonmail-bridge --cli --no-window && killall protonmail-bridge || true'
