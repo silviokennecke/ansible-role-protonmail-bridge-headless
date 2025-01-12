@@ -70,7 +70,7 @@
     set timeout -1
     spawn /usr/bin/protonmail-bridge --cli --no-window
     expect ">>>" {
-        send "export-tls-cert\r"
+        send "cert export \r"
     }
     expect -re ".*path.*" {
         send "{{ protonmail_bridge_config_dir }}/\r"
