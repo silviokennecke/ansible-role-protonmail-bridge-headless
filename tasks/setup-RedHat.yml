@@ -20,7 +20,7 @@
     url: "{{ item.url }}"
     dest: "{{ protonmail_lib_dir }}/{{ item.file }}"
   with_items:
-    - url: "https://protonmail.com/download/bridge/{{ protonmail_bridge_package_name }}"
+    - url: "https://proton.me/download/bridge/{{ protonmail_bridge_package_name }}"
       file: "{{ protonmail_bridge_package_name }}"
 
 - name: "Install protonmail-bridge package"

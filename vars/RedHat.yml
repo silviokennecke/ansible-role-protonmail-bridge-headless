@@ -1,5 +1,5 @@
 ---
-# https://protonmail.com/support/knowledge-base/install-bridge-linux-rpm-file/
+# https://proton.me/support/knowledge-base/install-bridge-linux-rpm-file/
 __deps:
     - "cyrus-sasl"
     - "cyrus-sasl-devel"

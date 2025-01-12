@@ -1,5 +1,5 @@
 ---
-# https://protonmail.com/support/knowledge-base/install-bridge-linux-pkgbuild-file/
+# https://proton.me/support/knowledge-base/install-bridge-linux-pkgbuild-file/
 __deps:
     - "base-devel"
     - "bridge-utils" # addresses keychain errors on some configurations

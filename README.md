@@ -4,7 +4,7 @@ Installs the ProtonMail Bridge (optionally prompting for 2FA), registers it as a
 Debian/Ubuntu, and Archlinux servers.
 
 ## Background
-The [ProtonMail Bridge app for Linux](https://protonmail.com/support/knowledge-base/bridge-for-linux/) enables you to integrate 
+The [ProtonMail Bridge app for Linux](https://proton.me/support/knowledge-base/bridge-for-linux/) enables you to integrate 
 your ProtonMail account with IMAP and SMTP email programs such as Thunderbird and Evolution. Bridge is available to all 
 ProtonMail users with a paid subscription.
 
